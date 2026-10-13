@@ -1,0 +1,358 @@
+/* ==========================================
+   GLOBAL STYLES & VARIABLES
+========================================== */
+:root {
+  --primary: #4f46e5;
+  --primary-dark: #4338ca;
+  --text-main: #1f2937;
+  --text-muted: #6b7280;
+  --bg-body: #f9fafb;
+  --bg-card: #ffffff;
+  --border-color: #e5e7eb;
+  --transition: all 0.3s ease;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  background-color: var(--bg-body);
+  color: var(--text-main);
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  width: 100%;
+  max-width: 1150px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* ==========================================
+   NAVIGATION BAR
+========================================== */
+.navbar {
+  background-color: var(--bg-card);
+  border-bottom: 1px solid var(--border-color);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+}
+
+.nav-logo {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.nav-menu {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-link {
+  font-weight: 500;
+  color: var(--text-muted);
+  transition: var(--transition);
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: var(--primary);
+}
+
+/* Hamburger Menu for Mobile */
+.hamburger {
+  display: none;
+  cursor: pointer;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: var(--text-main);
+}
+
+/* ==========================================
+   FOOTER
+========================================== */
+.footer {
+  background-color: var(--bg-card);
+  border-top: 1px solid var(--border-color);
+  padding: 2rem 0;
+  text-align: center;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  margin-top: auto;
+}
+
+/* ==========================================
+   PAGE HEADER / HERO SECTION
+========================================== */
+.page-header {
+  padding: 4rem 0 2rem 0;
+  text-align: center;
+}
+
+.page-header h1 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 0.75rem;
+  color: var(--text-main);
+}
+
+.page-header p {
+  font-size: 1.1rem;
+  color: var(--text-muted);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* ==========================================
+   HOME PAGE (index.html) STYLES
+========================================== */
+.hero {
+  padding: 5rem 0;
+  text-align: center;
+  background: linear-gradient(135deg, #eef2ff 0%, #f9fafb 100%);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  color: var(--text-main);
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: var(--text-muted);
+  max-width: 700px;
+  margin: 0 auto 2rem auto;
+}
+
+.btn {
+  display: inline-block;
+  background-color: var(--primary);
+  color: white;
+  padding: 0.75rem 1.75rem;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: var(--transition);
+}
+
+.btn:hover {
+  background-color: var(--primary-dark);
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  padding: 4rem 0;
+}
+
+.feature-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  padding: 2rem;
+  border-radius: 8px;
+  transition: var(--transition);
+}
+
+.feature-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05);
+}
+
+.feature-card h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
+  color: var(--text-main);
+}
+
+.feature-card p {
+  color: var(--text-muted);
+  margin-bottom: 1.25rem;
+  font-size: 0.95rem;
+}
+
+.card-link {
+  font-weight: 600;
+  color: var(--primary);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+/* ==========================================
+   ARTICLES PAGE (articles.html)
+========================================== */
+.articles-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  padding: 2rem 0 4rem 0;
+}
+
+.article-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.article-img-placeholder {
+  height: 180px;
+  background-color: #e0e7ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary);
+  font-weight: 600;
+}
+
+.article-content {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.article-date {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin-bottom: 0.5rem;
+}
+
+.article-content h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.75rem;
+  color: var(--text-main);
+}
+
+.article-content p {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  margin-bottom: 1.5rem;
+  flex-grow: 1;
+}
+
+/* ==========================================
+   CUSTOM HTML PAGE (custom.html)
+========================================== */
+.custom-section-wrapper {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 2rem;
+  margin: 2rem 0 4rem 0;
+}
+
+.custom-instructions {
+  background-color: #eff6ff;
+  border-left: 4px solid var(--primary);
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  font-size: 0.95rem;
+  color: #1e40af;
+  border-radius: 0 6px 6px 0;
+}
+
+.custom-render-area {
+  border: 2px dashed var(--border-color);
+  padding: 2rem;
+  border-radius: 6px;
+  background-color: #fafafa;
+}
+
+/* ==========================================
+   ABOUT PAGE (about.html)
+========================================== */
+.about-content {
+  max-width: 800px;
+  margin: 2rem auto 4rem auto;
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  padding: 3rem;
+  border-radius: 8px;
+}
+
+.about-content h2 {
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: var(--text-main);
+}
+
+.about-content h2:first-of-type {
+  margin-top: 0;
+}
+
+.about-content p {
+  color: var(--text-muted);
+  margin-bottom: 1.25rem;
+}
+
+/* ==========================================
+   RESPONSIVE DESIGN (MEDIA QUERIES)
+========================================== */
+@media (max-width: 768px) {
+  .nav-menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background-color: var(--bg-card);
+    border-bottom: 1px solid var(--border-color);
+    padding: 1.5rem;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05);
+    gap: 1rem;
+  }
+
+  .nav-menu.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .hero h1 {
+    font-size: 2.25rem;
+  }
+  
+  .page-header h1 {
+    font-size: 2rem;
+  }
+
+  .about-content {
+    padding: 1.5rem;
+  }
+}

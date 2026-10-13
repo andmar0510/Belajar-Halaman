@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beranda - Website Profesional</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="nav-logo">BrandLogo</a>
+      <button class="hamburger" id="hamburger-btn" aria-label="Toggle Menu">&#9776;</button>
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="index.html" class="nav-link active">Beranda</a></li>
+        <li><a href="articles.html" class="nav-link">Artikel</a></li>
+        <li><a href="custom.html" class="nav-link">Custom HTML</a></li>
+        <li><a href="about.html" class="nav-link">Tentang Kami</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero">
+    <div class="container">
+      <h1>Selamat Datang di Portal Utama Kami</h1>
+      <p>Platform web statis modern, bersih, dan responsif yang dirancang untuk performa tinggi dan pengalaman pengguna yang luar biasa.</p>
+      <a href="articles.html" class="btn">Jelajahi Artikel</a>
+    </div>
+  </header>
+
+  <!-- Main Content / Navigation Cards -->
+  <main class="container">
+    <div class="features-grid">
+      <div class="feature-card">
+        <h3>Daftar Artikel</h3>
+        <p>Temukan berbagai ulasan, tulisan informatif, dan artikel menarik yang diperbarui secara berkala dengan tata letak blog yang rapi.</p>
+        <a href="articles.html" class="card-link">Baca Artikel &rarr;</a>
+      </div>
+      <div class="feature-card">
+        <h3>Area Custom HTML</h3>
+        <p>Halaman khusus yang fleksibel untuk menyisipkan skrip, widget eksternal, iframe, atau komponen interaktif kustom Anda.</p>
+        <a href="custom.html" class="card-link">Buka Custom Area &rarr;</a>
+      </div>
+      <div class="feature-card">
+        <h3>Tentang Kami</h3>
+        <p>Kenali lebih dekat latar belakang, visi, misi, serta komitmen kami dalam memberikan layanan terbaik untuk Anda.</p>
+        <a href="about.html" class="card-link">Pelajari Profil &rarr;</a>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 BrandLogo. Hak Cipta Dilindungi.</p>
+    </div>
+  </footer>
+
+  <!-- Script untuk Menu Mobile -->
+  <script>
+    const hamburgerBtn = document.getElementById('hamburger-btn');
+    const navMenu = document.getElementById('nav-menu');
+
+    hamburgerBtn.addEventListener('click', () => {
+      navMenu.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Custom HTML & Embed - Website Profesional</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="nav-logo">BrandLogo</a>
+      <button class="hamburger" id="hamburger-btn" aria-label="Toggle Menu">&#9776;</button>
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="index.html" class="nav-link">Beranda</a></li>
+        <li><a href="articles.html" class="nav-link">Artikel</a></li>
+        <li><a href="custom.html" class="nav-link active">Custom HTML</a></li>
+        <li><a href="about.html" class="nav-link">Tentang Kami</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="page-header">
+    <div class="container">
+      <h1>Area Custom HTML</h1>
+      <p>Halaman fleksibel yang dirancang khusus untuk menampung elemen, widget, atau kode embed eksternal.</p>
+    </div>
+  </header>
+
+  <!-- Custom Content Container -->
+  <main class="container">
+    <div class="custom-section-wrapper">
+      <div class="custom-instructions">
+        <strong>Petunjuk Kustomisasi:</strong> Silakan sunting file <code>custom.html</code> ini dan masukkan struktur HTML, skrip, iframe, atau widget interaktif Anda di dalam area container di bawah ini.
+      </div>
+
+      <!-- ======================================================== -->
+      <!-- MULAI AREA KUSTOM: SISIPKAN KODE HTML/WIDGET ANDA DI SINI -->
+      <!-- ======================================================== -->
+      <div class="custom-render-area" id="custom-content-container">
+        <h2>Konten Default Placeholder</h2>
+        <p style="color: var(--text-muted); margin-top: 0.5rem; margin-bottom: 1rem;">
+          Area ini saat ini kosong dan siap menerima kode kustom Anda (misalnya widget cuaca, kalkulator interaktif, peta embed, formulir, atau kode HTML lainnya).
+        </p>
+        
+        <!-- Contoh elemen demo interaktif sederhana -->
+        <button id="demo-alert-btn" class="btn" style="cursor: pointer;">Uji Interaksi JavaScript</button>
+      </div>
+      <!-- ======================================================== -->
+      <!-- AKHIR AREA KUSTOM                                        -->
+      <!-- ======================================================== -->
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 BrandLogo. Hak Cipta Dilindungi.</p>
+    </div>
+  </footer>
+
+  <!-- Script untuk Menu Mobile & Contoh Interaksi -->
+  <script>
+    const hamburgerBtn = document.getElementById('hamburger-btn');
+    const navMenu = document.getElementById('nav-menu');
+
+    hamburgerBtn.addEventListener('click', () => {
+      navMenu.classList.toggle('active');
+    });
+
+    // Skrip contoh demo pada area kustom
+    const demoBtn = document.getElementById('demo-alert-btn');
+    if(demoBtn) {
+      demoBtn.addEventListener('click', () => {
+        alert('Area kustom berfungsi dengan baik! Anda siap menyisipkan kode Anda sendiri.');
+      });
+    }
+  </script>
+</body>
+</html>

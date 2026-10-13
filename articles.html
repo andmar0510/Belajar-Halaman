@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Artikel & Tulisan - Website Profesional</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="nav-logo">BrandLogo</a>
+      <button class="hamburger" id="hamburger-btn" aria-label="Toggle Menu">&#9776;</button>
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="index.html" class="nav-link">Beranda</a></li>
+        <li><a href="articles.html" class="nav-link active">Artikel</a></li>
+        <li><a href="custom.html" class="nav-link">Custom HTML</a></li>
+        <li><a href="about.html" class="nav-link">Tentang Kami</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="page-header">
+    <div class="container">
+      <h1>Artikel & Wawasan</h1>
+      <p>Kumpulan tulisan pilihan seputar teknologi, desain, dan pengembangan web.</p>
+    </div>
+  </header>
+
+  <!-- Articles Grid -->
+  <main class="container">
+    <div class="articles-grid">
+      <!-- Artikel 1 -->
+      article class="article-card">
+        <div class="article-img-placeholder">Thumbnail Artikel 1</div>
+        <div class="article-content">
+          <span class="article-date">12 Oktober 2026</span>
+          <h3>Membangun Desain UI/UX yang Efektif untuk Web Modern</h3>
+          <p>Pelajari prinsip-prinsip dasar tata letak minimalis yang meningkatkan kenyamanan pembaca sekaligus mempertahankan estetika visual.</p>
+          <a href="#" class="card-link">Baca Selengkapnya &rarr;</a>
+        </div>
+      </article>
+
+      <!-- Artikel 2 -->
+      <article class="article-card">
+        <div class="article-img-placeholder">Thumbnail Artikel 2</div>
+        <div class="article-content">
+          <span class="article-date">10 Oktober 2026</span>
+          <h3>Optimalisasi Performa Website Statis Tanpa Framework Berat</h3>
+          <p>Mengapa penggunaan HTML5, CSS3, dan JavaScript murni mampu menghasilkan kecepatan muat halaman yang optimal bagi pengguna.</p>
+          <a href="#" class="card-link">Baca Selengkapnya &rarr;</a>
+        </div>
+      </article>
+
+      <!-- Artikel 3 -->
+      <article class="article-card">
+        <div class="article-img-placeholder">Thumbnail Artikel 3</div>
+        <div class="article-content">
+          <span class="article-date">05 Oktober 2026</span>
+          <h3>Panduan Praktis Penggunaan Flexbox dan Grid CSS</h3>
+          <p>Memahami kapan waktu terbaik menggunakan sistem tata letak Flexbox versus CSS Grid untuk desain yang responsif di berbagai perangkat.</p>
+          <a href="#" class="card-link">Baca Selengkapnya &rarr;</a>
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 BrandLogo. Hak Cipta Dilindungi.</p>
+    </div>
+  </footer>
+
+  <!-- Script untuk Menu Mobile -->
+  <script>
+    const hamburgerBtn = document.getElementById('hamburger-btn');
+    const navMenu = document.getElementById('nav-menu');
+
+    hamburgerBtn.addEventListener('click', () => {
+      navMenu.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>

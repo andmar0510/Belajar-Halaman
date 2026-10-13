@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tentang Kami - Website Profesional</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="nav-logo">BrandLogo</a>
+      <button class="hamburger" id="hamburger-btn" aria-label="Toggle Menu">&#9776;</button>
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="index.html" class="nav-link">Beranda</a></li>
+        <li><a href="articles.html" class="nav-link">Artikel</a></li>
+        <li><a href="custom.html" class="nav-link">Custom HTML</a></li>
+        <li><a href="about.html" class="nav-link active">Tentang Kami</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="page-header">
+    <div class="container">
+      <h1>Tentang Kami</h1>
+      <p>Mengenal lebih dekat profil, visi, dan komitmen profesional kami.</p>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container">
+    <div class="about-content">
+      <h2>Siapa Kami?</h2>
+      <p>Kami adalah tim pengembang dan perancang web yang berdedikasi untuk menghadirkan solusi digital berkualitas tinggi. Fokus utama kami adalah menciptakan antarmuka yang bersih, intuitif, cepat, dan mudah diakses oleh semua kalangan pengguna di berbagai perangkat.</p>
+
+      <h2>Visi & Misi</h2>
+      <p><strong>Visi:</strong> Menjadi standar acuan dalam pengembangan web statis yang efisien, estetis, dan fungsional.</p>
+      <p><strong>Misi:</strong> Menyediakan kode sumber yang bersih dan terstruktur dengan tetap mengutamakan kenyamanan pengalaman pengguna (UX) serta kecepatan muat halaman.</p>
+
+      <h2>Komitmen Kami</h2>
+      <p>Kami percaya bahwa kesederhanaan adalah kunci dari desain yang elegan. Setiap baris kode ditulis dengan teliti untuk memastikan skalabilitas jangka panjang serta kemudahan pemeliharaan bagi klien maupun pengembang.</p>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 BrandLogo. Hak Cipta Dilindungi.</p>
+    </div>
+  </footer>
+
+  <!-- Script untuk Menu Mobile -->
+  <script>
+    const hamburgerBtn = document.getElementById('hamburger-btn');
+    const navMenu = document.getElementById('nav-menu');
+
+    hamburgerBtn.addEventListener('click', () => {
+      navMenu.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>
